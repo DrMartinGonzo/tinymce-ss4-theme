@@ -1,0 +1,35 @@
+{
+    "name": "drmartingonzo/tinymce-ss4-theme",
+    "description": "TinyMCE Silverstripe 4 inspired theme",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "tinymce",
+        "theme"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [{
+        "name": "Martin Portevin",
+        "email": "martin.portevin@gmail.com"
+    }],
+    "require": {
+        "silverstripe/admin": "^1.0",
+        "silverstripe/framework": "^4",
+        "silverstripe/vendor-plugin": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "drmartingonzo\\tinymce-ss4-theme\\": "src/"
+        }
+    },
+    "extra": {
+        "installer-name": "tinymce-ss4-theme",
+        "screenshots": [
+          "screenshot.png"
+        ],
+        "expose": [
+            "client/dist"
+        ]
+    },
+    "minimum-stability": "dev"
+}

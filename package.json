@@ -1,0 +1,35 @@
+{
+  "name": "tinymce-ss4-theme",
+  "version": "1.0.0",
+  "description": "TinyMCE Silverstripe 4 inspired theme",
+  "scripts": {
+    "build": "grunt build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DrMartinGonzo/tinymce-ss4-theme.git"
+  },
+  "keywords": [
+    "silverstripe",
+    "tinymce",
+    "theme"
+  ],
+  "author": "Martin Portevin",
+  "bugs": {
+    "url": "https://github.com/DrMartinGonzo/tinymce-ss4-theme/issues"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-contrib-clean": "~1.1.0",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-less": "~1.4.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "load-grunt-tasks": "~3.5.2"
+  },
+  "engines": {
+    "node": ">=0.10.26"
+  }
+}
