@@ -38,14 +38,18 @@
 }
 
 .@{prefix}-btn-group {
-  // .border-radius(3px 0 0 3px);
   .btn-group-border-left(@btn-border-left);
   margin-left: 2px;
 }
 
+.@{prefix}-btn-group .@{prefix}-first {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .@{prefix}-btn-group .@{prefix}-last {
-  .border-radius(0 3px 3px 0);
-  .btn-group-border-right(@btn-border-right);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .@{prefix}-btn-group .@{prefix}-first.@{prefix}-last {

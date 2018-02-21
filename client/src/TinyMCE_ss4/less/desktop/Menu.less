@@ -18,17 +18,35 @@
   overflow: auto;
   overflow-x: hidden;
 
-  &.@{prefix}-animate {
-    opacity: 0.01;
-    transform: rotateY(10deg) rotateX(-10deg);
-    transform-origin: left top;
-  }
+  // temp fix
+  transform-origin: left top;
+  animation: fadein .075s ease, showmenu .1s ease both;
+  will-change: opacity, transform;
+
+  // TODO: needs a newer version of tinymce to be active
+  // &.@{prefix}-animate {
+  //   opacity: 0.01;
+  //   transform: rotateY(10deg) rotateX(-10deg);
+  //   transform-origin: left top;
+  // }
 
   &.@{prefix}-menu-align {
     .@{prefix}-menu-shortcut, .@{prefix}-caret {
       position: absolute;
       right: 0;
     }
+  }
+}
+
+// temp fix
+@keyframes showmenu {
+  0% {
+    transform: rotateY(10deg) rotateX(-10deg);
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0.01;
   }
 }
 
@@ -48,10 +66,10 @@
     }
 }
 
-.@{prefix}-menu-sub-tr-tl { margin: -6px 0 0 -1px; }
-.@{prefix}-menu-sub-br-bl { margin: 6px 0 0 -1px; }
-.@{prefix}-menu-sub-tl-tr { margin: -6px 0 0 1px; }
-.@{prefix}-menu-sub-bl-br { margin: 6px 0 0 1px; }
+.@{prefix}-menu-sub-tr-tl { margin: -6px 0 0 -3px; }
+.@{prefix}-menu-sub-br-bl { margin: 6px 0 0 -3px; }
+.@{prefix}-menu-sub-tl-tr { margin: -6px 0 0 3px; }
+.@{prefix}-menu-sub-bl-br { margin: 6px 0 0 3px; }
 
 // RTL
 
